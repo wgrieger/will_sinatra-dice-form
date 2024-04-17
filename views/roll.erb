@@ -1,0 +1,8 @@
+<h1><%=@dice%>d<%=@sides%><h1>
+
+<!-- insert go home and roll again links-->
+
+<ol><% @roll_output.each do |display| %>
+  <li>  <%= display %> </li>
+<%end%>
+</ol>
