@@ -1,8 +1,10 @@
-<h1><%=@dice%>d<%=@sides%><h1>
+<h1><%=@dice%>d<%=@sides%></h1>
 
-<!-- insert go home and roll again links-->
+<a href="https://super-yodel-5gv96pjx79473v49q-3000.app.github.dev"> Go Home </a> | <a href="https://super-yodel-5gv96pjx79473v49q-3000.app.github.dev/dice/sides?num_dice=<%=@dice%>&num_sides=<%=@sides%>"> Roll Again </a>
 
-<ol><% @roll_output.each do |display| %>
-  <li>  <%= display %> </li>
+ | <a href="https://super-yodel-5gv96pjx79473v49q-3000.app.github.dev"> Go Home </a>
+
+<ol ><% @roll_output.each do |display| %>
+ <li> <span style='font-style: italic;' > Result: </span> <span style='font-weight: bold;'><%= display %> </span></li>
 <%end%>
 </ol>

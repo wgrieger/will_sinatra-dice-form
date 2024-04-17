@@ -11,7 +11,7 @@ get("/dice/sides") do
   
   @roll_output=Array.new
   @dice.times do 
-    roll= rand(1...@sides)
+    roll= rand(1..@sides)
     @roll_output.push(roll)
   end 
 
